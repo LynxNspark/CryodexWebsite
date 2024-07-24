@@ -40,7 +40,7 @@ function createSection(Name,list){
     }
 }
 
-var CryoBalls = [
+var Cryoballs = [
     ["Red Cryoball"],
     ["Orange Cryoball"],
     ["Yellow Cryoball"],
