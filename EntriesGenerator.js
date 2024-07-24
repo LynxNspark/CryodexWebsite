@@ -105,7 +105,8 @@ function toggle(item){
         location.reload();
     }
 }
-const caughtMons=localStorage.getItem("CaughtList").split(' ');
+if(localStorage.getItem("CaughtList")!=null){
+const caughtMons=localStorage.getItem("CaughtList").split(' ');}
 
 function display(id,isShiny){
     var block = document.createElement("div");
