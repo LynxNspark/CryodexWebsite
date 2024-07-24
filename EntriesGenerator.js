@@ -6,7 +6,7 @@ if (typeof(Storage) != "undefined" && sessionStorage.getItem("displayForms")==un
     sessionStorage.setItem("displayChecklist",false);
     sessionStorage.setItem("isShiny",false)
 }
-if (typeof(Storage) != "undefined" && sessionStorage.getItem("displayForms")==undefined){
+if (typeof(Storage) != "undefined" && localStorage.getItem("CaughtList")==undefined){
     localStorage.setItem("CaughtList",'hi hello')
 }
 
