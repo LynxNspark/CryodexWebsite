@@ -7,7 +7,7 @@ function display(group,id){
     block.style.display="inline-block"
     document.body.appendChild(block)    
     var img = document.createElement('img');
-    img.src="Items/"+group+"/"+name+"Icon.png";
+    img.src="./Items/"+group+"/"+name+"Icon.png";
     img.style.left="40px";
     img.style.position="relative";
     img.style.top="0px";
