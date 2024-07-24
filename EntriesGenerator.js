@@ -106,14 +106,19 @@ function toggle(item){
     }
 }
 
-if(localStorage.getItem("Caughtlist")==''){
-localStorage.setItem("CaughtList",'')
+
+if(localStorage.getItem("CaughtList")==null){
+    localStorage.setItem("CaughtList",'')
 }
 
-const caughtMons=localStorage.getItem("CaughtList").split(' ');
+
+
+
+
 
 
 function display(id,isShiny){
+    var caughtMons=localStorage.getItem("CaughtList").split(' ');
     var block = document.createElement("div");
     block.style.width = "100px";
     block.style.height = "100px";
@@ -203,20 +208,20 @@ function display(id,isShiny){
             if(id[2]==0){
                 checkbox.id=id[0]+"S";
                 }
-                else{
+            else{
                     checkbox.id=id[0]+"-"+id[2]+"S";
                 }
         }
         else{
-        if(id[2]==0){
+            if(id[2]==0){
         checkbox.id=id[0];
-        }
-        else{
+            }
+            else{
             checkbox.id=id[0]+"-"+id[2]
-        }
+            }
         }
 
-        if(id[2]==0){
+    if(id[2]==0){
         if(caughtMons.includes(String(id[0])) && !isShiny){
         checkbox.checked='true';
         }
