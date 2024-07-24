@@ -1312,18 +1312,18 @@ var caughtString=''
 for(var i=0; i<PokeInfo.length;i++){
     if(document.getElementById(PokeInfo[i][0])!=null){
         if(PokeInfo[i][2]==0){
-            if(document.getElementById(PokeInfo[i][0]).checked){
+            if(document.getElementById(PokeInfo[i][0]).checked==true){
                 caughtString=caughtString+PokeInfo[i][0]+' ';
             }
-            if(document.getElementById(PokeInfo[i][0]+"S").checked){
+            if(document.getElementById(PokeInfo[i][0]+"S").checked==true){
                 caughtString=caughtString+PokeInfo[i][0]+'S ';
             }
         }
         else{
-            if(document.getElementById(PokeInfo[i][0]+"-"+PokeInfo[i][2]).checked){
+            if(document.getElementById(PokeInfo[i][0]+"-"+PokeInfo[i][2]).checked==true){
                 caughtString=caughtString+PokeInfo[i][0]+'-'+PokeInfo[i][2]+" ";
             }
-            if(document.getElementById(PokeInfo[i][0]+"-"+PokeInfo[i][2]+"S").checked){
+            if(document.getElementById(PokeInfo[i][0]+"-"+PokeInfo[i][2]+"S").checked==true){
                 caughtString=caughtString+PokeInfo[i][0]+'-'+PokeInfo[i][2]+"S ";
             }
         }
