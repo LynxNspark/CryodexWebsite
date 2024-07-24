@@ -108,6 +108,10 @@ function toggle(item){
 if(localStorage.getItem("CaughtList")!=null){
 const caughtMons=localStorage.getItem("CaughtList").split(' ');}
 
+else{
+    const caughtMons=[]
+}
+
 function display(id,isShiny){
     var block = document.createElement("div");
     block.style.width = "100px";
