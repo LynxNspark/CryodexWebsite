@@ -105,11 +105,12 @@ function toggle(item){
         location.reload();
     }
 }
-if(localStorage.getItem("CaughtList")!=null){
+
+if(localStorage.getItem("CaughtList")!=undefined){
 const caughtMons=localStorage.getItem("CaughtList").split(' ');}
 
 else{
-    const caughtMons=[]
+    const caughtMons=['hi','hello']
 }
 
 function display(id,isShiny){
