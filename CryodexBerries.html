@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <link href="BerriesPage.css" rel="stylesheet">
+</head>
+
+
+<script>
+  var params = new URLSearchParams(window.location.search);
+    var name = params.get("name");
+    var img = document.createElement('img');
+    img.src=name;
+    document.body.appendChild(img);
+</script>
+
+<body>
+
+  <div class="topnav">
+    <a href="CryodexHomePage.html">Home</a>
+    <a href="CryodexChangelog.html">Changelog</a>
+    <a href="CryodexEntries.html">Entries</a>
+    <a class="active" href="">Berries</a>
+    <a href="CryodexItems.html">Items</a>
+  </div>
+  
+  <div class="title">
+    <img src="Berries.png" class="title">
+  </div>
+
+  
+
+  <script src="BerriesGenerator.js" charset="UTF-8"></script>
+  
+</body>
+
+
+</html>
