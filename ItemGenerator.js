@@ -70,6 +70,6 @@ var MegaStones = [
     ["Manectite"]
 ]
 
-createSection("Cryoballs",CryoBalls)
+createSection("Cryoballs",Cryoballs)
 createSection("Mega Stones",MegaStones)
 
