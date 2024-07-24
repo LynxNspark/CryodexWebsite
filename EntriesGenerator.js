@@ -1312,28 +1312,30 @@ for (var i = 0; i < PokeInfo.length; i++) {
 }
 
 
-function countChecks(){
-var caughtString=''
-for(var i=0; i<PokeInfo.length;i++){
-    if(document.getElementById(PokeInfo[i][0])!=null && document.getElementById(PokeInfo[i][0])!='null'){
-        if(PokeInfo[i][2]==0){
-            if(document.getElementById(PokeInfo[i][0]).checked==true){
-                caughtString=caughtString+PokeInfo[i][0]+' ';
+function countChecks() {
+    var caughtString = '';
+    for (var i = 0; i < PokeInfo.length; i++) {
+        var baseElement = document.getElementById(PokeInfo[i][0]);
+        var baseSElement = document.getElementById(PokeInfo[i][0] + "S");
+        var evolvedElement = document.getElementById(PokeInfo[i][0] + "-" + PokeInfo[i][2]);
+        var evolvedSElement = document.getElementById(PokeInfo[i][0] + "-" + PokeInfo[i][2] + "S");
+        
+        if (baseElement != null && PokeInfo[i][2] == 0) {
+            if (baseElement.checked) {
+                caughtString += PokeInfo[i][0] + ' ';
             }
-            if(document.getElementById(PokeInfo[i][0]+"S").checked==true){
-                caughtString=caughtString+PokeInfo[i][0]+'S ';
+            if (baseSElement != null && baseSElement.checked) {
+                caughtString += PokeInfo[i][0] + 'S ';
             }
-        }
-        else{
-            if(document.getElementById(PokeInfo[i][0]+"-"+PokeInfo[i][2]).checked==true){
-                caughtString=caughtString+PokeInfo[i][0]+'-'+PokeInfo[i][2]+" ";
+        } else {
+            if (evolvedElement != null && evolvedElement.checked) {
+                caughtString += PokeInfo[i][0] + '-' + PokeInfo[i][2] + " ";
             }
-            if(document.getElementById(PokeInfo[i][0]+"-"+PokeInfo[i][2]+"S").checked==true){
-                caughtString=caughtString+PokeInfo[i][0]+'-'+PokeInfo[i][2]+"S ";
+            if (evolvedSElement != null && evolvedSElement.checked) {
+                caughtString += PokeInfo[i][0] + '-' + PokeInfo[i][2] + "S ";
             }
         }
     }
-}
-localStorage.setItem("CaughtList",caughtString);
-location.reload();
+    localStorage.setItem("CaughtList", caughtString);
+    location.reload();
 }
