@@ -6,6 +6,9 @@ if (typeof(Storage) != "undefined" && sessionStorage.getItem("displayForms")==un
     sessionStorage.setItem("displayChecklist",false);
     sessionStorage.setItem("isShiny",false)
 }
+if (typeof(Storage) != "undefined" && sessionStorage.getItem("displayForms")==undefined){
+    localStorage.setItem("CaughtList",'hi hello')
+}
 
 var buttonRow = document.createElement("div");
 document.body.appendChild(buttonRow);
@@ -1308,7 +1311,6 @@ for (var i = 0; i < PokeInfo.length; i++) {
 
 
 function countChecks(){
-localStorage.setItem("CaughtList",'')
 var caughtString=''
 for(var i=0; i<PokeInfo.length;i++){
     if(document.getElementById(PokeInfo[i][0])!=null){
