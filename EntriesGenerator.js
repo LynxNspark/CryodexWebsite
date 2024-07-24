@@ -1315,7 +1315,7 @@ for (var i = 0; i < PokeInfo.length; i++) {
 function countChecks(){
 var caughtString=''
 for(var i=0; i<PokeInfo.length;i++){
-    if(document.getElementById(PokeInfo[i][0])!=null){
+    if(document.getElementById(PokeInfo[i][0])!=null && document.getElementById(PokeInfo[i][0])!='null'){
         if(PokeInfo[i][2]==0){
             if(document.getElementById(PokeInfo[i][0]).checked==true){
                 caughtString=caughtString+PokeInfo[i][0]+' ';
