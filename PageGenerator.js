@@ -1131,6 +1131,10 @@ document.body.appendChild(stamp);
 
 var img = document.createElement('img');
 img.src = "Icons/" + name + "Icon.png";
+img.onerror=function(event){
+    event.target.src="Icons/QuestionIcon.png"
+    img.onerror=null
+}
 img.style.width = "300px";
 img.style.position = "relative";
 img.style.left = '95px';
@@ -1252,6 +1256,10 @@ document.body.appendChild(stamp1);
 
 var img1 = document.createElement("img");
 img1.src = "Icons/"+name+"Icon.png";
+img1.onerror=function(event){
+    event.target.src="Icons/QuestionIcon.png"
+    img1.onerror=null
+}
 img1.style.position = "absolute";
 img1.style.left = "813px";
 img1.style.top = "315px";
@@ -1282,6 +1290,10 @@ document.body.appendChild(stamp1);
 
 var img1 = document.createElement("img");
 img1.src = "Icons/"+PokeInfo[num][4][0]+"Icon.png";
+img1.onerror=function(event){
+    event.target.src="Icons/QuestionIcon.png"
+    img1.onerror=null
+}
 img1.style.position = "absolute";
 img1.style.left = "663px";
 img1.style.top = "315px";
@@ -1320,6 +1332,10 @@ document.body.appendChild(stamp2);
 
 var img2 = document.createElement("img");
 img2.src = "Icons/" + PokeInfo[num][4][1] + "Icon.png";
+img2.onerror=function(event){
+    event.target.src="Icons/QuestionIcon.png"
+    img2.onerror=null
+}
 img2.style.position = "absolute";
 img2.style.left = "1063px";
 img2.style.top = "315px";
@@ -1350,6 +1366,10 @@ if (PokeInfo[num][4].length == 3) {
 
     var img1 = document.createElement("img");
     img1.src = "Icons/" + PokeInfo[num][4][0] + "Icon.png";
+    img1.onerror=function(event){
+        event.target.src="Icons/QuestionIcon.png"
+        img1.onerror=null
+    }
     img1.style.position = "absolute";
     img1.style.left = "513px"; // 663 - 150
     img1.style.top = "315px";
@@ -1388,6 +1408,10 @@ if (PokeInfo[num][4].length == 3) {
 
     var img2 = document.createElement("img");
     img2.src = "Icons/" + PokeInfo[num][4][1] + "Icon.png";
+    img2.onerror=function(event){
+        event.target.src="Icons/QuestionIcon.png"
+        img2.onerror=null
+    }
     img2.style.position = "absolute";
     img2.style.left = "913px"; // 1063 - 150
     img2.style.top = "315px";
@@ -1426,6 +1450,10 @@ if (PokeInfo[num][4].length == 3) {
 
     var img3 = document.createElement("img");
     img3.src = "Icons/" + PokeInfo[num][4][2] + "Icon.png";
+    img3.onerror=function(event){
+        event.target.src="Icons/QuestionIcon.png"
+        img3.onerror=null
+    }
     img3.style.position = "absolute";
     img3.style.left = "1338px"; // 1363 - 150
     img3.style.top = "315px";

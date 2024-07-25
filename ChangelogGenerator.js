@@ -140,10 +140,15 @@ space.appendChild(spaceText)
 
 var logPicture = document.createElement("img")
 logPicture.src = "Updates/" +chosenUpdate[0]+ ".png";
+logPicture.onerror=function(event){
+    event.target.src="Updates/BlankUpdate.png"
+    logPicture.onerror=null
+}
 logPicture.style.width="750px";
 logPicture.style.maxHeight="500px"
 logPicture.style.position="relative"
 document.body.appendChild(logPicture);
+
 
 var division = document.createElement("div")
 division.style.width='200px'
