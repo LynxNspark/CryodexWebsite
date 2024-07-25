@@ -4,7 +4,7 @@ var UpdateInfo = [
     ["FireTypeUpdate",["Numel"," Camerupt"," Heatran"," Capsakid"," Scovillain"," Charcadet"," Armarouge"," Ceruledge"," Chi-Yu"],21],
     ["CrocUpdate",["Totodile"," Croconaw"," Feraligatr"," Sandile"," Krokorok"," Krookodile"," Fuecoco"," Crocalor"," Skeledirge"],20],
     ["FishUpdate",["Relicanth"," Finneon"," Lumineon"," Bruxish"," Dondozo"," Tatsugiri"],19],
-    ["NormalTypeUpdate",["Wynaut"," Wobuffet"," Whismur"," Loudred"," Exploud"," Wyrdeer"," Farigiraf"],18],
+    ["NormalTypeUpdate",["Wynaut"," Wobuffet"," Whismur"," Loudred"," Exploud","Audino"," Wyrdeer"," Farigiraf"],18],
     ["SpaceUpdate",["Cleffa"," Clefairy"," Clefable"," Deoxys"," Elgyem"," Beheeyem"],17],
     ["AquaticUpdate",["Horsea"," Seadra"," Kingdra"," Mantyke"," Mantine"," Skrelp"," Dragalge"," Wailmer"," Wailord"],16],
     ["FrogUpdate",["Croagunk"," Toxicroak"," Tympole"," Palpitoad"," Seismitoad"," Froakie"," Frogadier"," Greninja"],15],
