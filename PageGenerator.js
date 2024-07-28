@@ -1109,7 +1109,9 @@ var BerryInfo = [
     ["Topo"]
 ];
 
-
+if(sessionStorage.getItem("chosenMon")==null){
+    sessionStorage.setItem("chosenMon",'1,Bulbasaur,0,0')
+}
 
 let id=sessionStorage.getItem("chosenMon").split(",");
 let num=parseInt(id[0])-1
